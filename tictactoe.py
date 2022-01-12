@@ -17,7 +17,7 @@ def display_board():
   print(board[6] + ' | ' + board[7] + ' | ' + board[8])
 
 #Play a tic tac toe game
-def play_game():
+def main():
   
   #display initial board
   display_board()
@@ -34,10 +34,10 @@ def play_game():
     flip_player()
     
     # The game has ended
-    if winner=='X' or winner == 'O':
-      print(winner + ' Won')
-    elif winner == None:
-      print('Tie.')
+  if winner=='X' or winner == 'O':
+    print(winner + ' Won')
+  elif winner == None:
+    print('Tie.')
   
 def check_if_game_over():
   check_for_winner()
@@ -156,13 +156,11 @@ def handle_turn(player):
       valid= True
     else:
       print('You can go there. Go again')
-  
-  
-  
+    
   board[position] = player
   display_board()
   
-play_game()  
+main()  
 
 #board
 #display board
