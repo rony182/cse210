@@ -165,6 +165,7 @@ def handle_turn(player):
   board[position] = player
   display_board()
   
+  
 if __name__ == "__main__":
     main()  
 
