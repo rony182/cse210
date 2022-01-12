@@ -1,3 +1,8 @@
+'''
+Assignment: Develop a working program using a version control system. (Develop a TicTacToe Game)
+Author: Rony Calderon
+'''
+
 
 #game board
 board= ['-','-','-','-','-','-','-','-','-']
@@ -160,15 +165,6 @@ def handle_turn(player):
   board[position] = player
   display_board()
   
-main()  
+if __name__ == "__main__":
+    main()  
 
-#board
-#display board
-#play game
-#handle turn
-#check win
-  #check rows
-  #check columns
-  #check diagonals
-#check tie
-#flip player
