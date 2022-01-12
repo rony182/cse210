@@ -40,9 +40,9 @@ def main():
     
     # The game has ended
   if winner=='X' or winner == 'O':
-    print(winner + ' Won')
+    print(winner + ' is the winner!')
   elif winner == None:
-    print('Tie.')
+    print("it's a Tie.")
   
 def check_if_game_over():
   check_for_winner()
@@ -153,14 +153,14 @@ def handle_turn(player):
   while not valid:
   
     while position not in ['1', '2', '3', '4', '5', '6', '7', '8', '9']:
-      position=input('Invalid input. Choose a position from 1-9: ')
+      position=input('Invalid input. Please, choose a position from 1-9: ')
     
     position = int(position)-1
     
     if board[position] =='-':
       valid= True
     else:
-      print('You can go there. Go again')
+      print("You can't go there. Go again")
     
   board[position] = player
   display_board()
